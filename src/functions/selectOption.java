@@ -1,9 +1,10 @@
-package interfaceList;
-public class create {
+package functions;
+public class selectOption {
     public static int enter(int chosen) {
+        method i = new method();
         switch (chosen){
             case 1 :
-
+                i.create();
                 break;
             case 2 :
                 break;
@@ -15,8 +16,7 @@ public class create {
 
         }
 
+        return chosen;
     }
-
-
-    }
+}
 

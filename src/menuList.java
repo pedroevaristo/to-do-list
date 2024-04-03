@@ -1,8 +1,8 @@
 import java.util.Scanner;
-import interfaceList.create;
+import functions.selectOption;
 public class menuList {
     public static void main(String[] args) {
-        create start = new create();
+        selectOption start = new selectOption();
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Bem-vido ao To-Do, o que você quer fazer hoje? Fazer anotação (1) ou colocar algum lembrete (2) ?");
