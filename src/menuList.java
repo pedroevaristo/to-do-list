@@ -11,7 +11,8 @@ public class menuList {
         switch (choice) {
             case 1:
                 System.out.println("O que você quer fazer?\n\n1. Criar uma nova anotação\n 2. consultar\n 3. excluir anotação");
-                start.create();
+                int chosen = scan.nextInt();
+                start.enter(chosen);
                 break;
 
 
