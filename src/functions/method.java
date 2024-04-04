@@ -1,19 +1,22 @@
 package functions;
-
-import java.util.LinkedList;
-import java.util.List;
+import java.util.Scanner;
 
 public class method implements interfaceOf{
-    List<Integer> i = new LinkedList();
-    //criar um aramzenamento temporario que repassa para uma lista em que pode deletar, atualizar, criar, consultar
+    int index = 0;
+    Scanner scan = new Scanner(System.in);
+    //criar um armazenamento temporario que repassa para uma lista em que pode deletar, atualizar, criar, consultar
     @Override
-    public void create() {
+    public boolean create(String text) {
+        index +=1;
+        boolean validation = list.put(index, text).isEmpty();
+        return validation;
 
     }
 
     @Override
-    public void consult() {
-
+    public boolean consult(int index) {
+        boolean validation = list.containsKey(index);
+        return validation;
     }
 
     @Override
