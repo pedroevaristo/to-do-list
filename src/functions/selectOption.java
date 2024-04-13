@@ -1,15 +1,12 @@
 package functions;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class selectOption {
 
     public static int enter(int chosen) {
-        ArrayList array = new ArrayList<Integer>();
         Scanner scan = new Scanner(System.in);
-        method i = new method();
+        factoryMethod i = new factoryMethod();
 
         switch (chosen){
             case 1 :
@@ -19,13 +16,13 @@ public class selectOption {
                 break;
 
             case 2 :
-                System.out.println("Qual o indice quer escolher, no máximo: "+  interfaceOf.list.size());
+                System.out.println("Qual o indice quer escolher, no máximo: "/*+  Factorymethod.list.size()*/);
                 int index = scan.nextInt();
                 boolean verify = i.consult(index);
                 if(verify != true){
                     System.out.println("Não foi possível achar o indice digitado, verifique se digitou certo");
                 }else{
-                    System.out.println("Aqui está: \n" + interfaceOf.list.get(index));
+                    System.out.println("Aqui está: \n" /*+ commandHeader.list.get(index)*/);
                 }
                 break;
             case 3 :

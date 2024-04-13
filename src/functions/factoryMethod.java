@@ -1,7 +1,9 @@
 package functions;
+import java.util.HashMap;
 import java.util.Scanner;
 
-public class method implements interfaceOf{
+public class factoryMethod implements commandHeader{//implementation with command pattern
+    HashMap<Integer, String> list = new HashMap<>();
     int index = 0;
     Scanner scan = new Scanner(System.in);
     //criar um armazenamento temporario que repassa para uma lista em que pode deletar, atualizar, criar, consultar
@@ -21,6 +23,7 @@ public class method implements interfaceOf{
 
     @Override
     public void exclude() {
+
 
     }
 }
