@@ -1,4 +1,4 @@
-package connectionDB;
+package Data;
 
 public class dbConnSingleton {
 

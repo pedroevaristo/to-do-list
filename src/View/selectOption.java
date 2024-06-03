@@ -1,4 +1,6 @@
-package functions;
+package View;
+
+import Controller.factoryMethod;
 
 import java.util.Scanner;
 

@@ -1,8 +1,10 @@
-package functions;
+package Controller;
+import functions.commandHeader;
+
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class factoryMethod implements commandHeader{//implementation with command pattern
+public class factoryMethod implements commandHeader {//implementation with command pattern
     HashMap<Integer, String> list = new HashMap<>();
     int index = 0;
     Scanner scan = new Scanner(System.in);
